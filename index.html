@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tephL | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name." />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "dark");
+  </script>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <nav class="nav container">
+      <a href="#top" class="brand">tephL</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero / Biography -->
+    <section id="about" class="hero container">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-title reveal">Stephen Astrera.</h1>
+      <p class="hero-sub reveal">A developer up-to-date with the latest tech.</p>
+
+      <div class="bio reveal">
+        <img src="imgs/teph.jpg" alt="Describe the image" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;">
+        <div class="bio-text">
+          <h2>About me</h2>
+          <p>
+            A student of Bulacan State University - Malolos.
+            I aim to be a Software Engineer that provides modern solutions to modern and mundane problems. 
+          </p>
+          <p>
+            19 with a big curiosity about technology and a love for tinkering. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <h2 class="section-title reveal">My Projects</h2>
+
+      <article class="project reveal">
+        <div class="project-head">
+          <p class="eyebrow">Project 01</p>
+          <h3>AGAP.ai</h3>
+          <p class="project-desc">
+            Led a team to represent Bulacan State University with an app for Filipino citizens and dispatchers that is used to rank emergency reports based on their urgency with the power of an AI-powered triage system.
+          </p>
+          <ul class="tags">
+            <li>Artificial Intelligence</li><li>Mobile Application</li><li>Hackathon</li>
+          </ul>
+        </div>
+        <div class="gallery gallery-3">
+        <img src="imgs/team.jpeg" alt="Describe the image" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;">
+        <img src="imgs/agap1.jpg" alt="Describe the image" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;">
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-head">
+          <p class="eyebrow">Project 02</p>
+          <h3>Modding an Elitebook 6930p</h3>
+          <p class="project-desc">
+            Utilized an old laptop hardware to do development tasks through an installation and configuration of a minimal Linux distro.
+          </p>
+          <ul class="tags">
+            <li>Linux</li><li>Hardware</li><li>Systems</li>
+          </ul>
+        </div>
+        <div class="gallery gallery-1">
+          <img src="imgs/linux.jpg" alt="Describe the image" style="width:100%;height:800px;object-fit:cover;border-radius:18px;display:block;">
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Footer / Contacts -->
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div class="footer-cta">
+        <h2>Let's talk.</h2>
+        <p>Have a project in mind or just want to say hi? Reach out.</p>
+      </div>
+      <ul class="contacts">
+        <li><span>Email</span><a href="mailto:rhezstephen06@gmail.com">rhezstephen06@gmail.com</a></li>
+        <li><span>GitHub</span><a target="_blank" href="https://github.com/tephL">tephL</a></li>
+        <li><span>LinkedIn</span><a target="_blank" href="https://ph.linkedin.com/in/rhez-stephen-astrera-7b8427395">Rhez Stephen Astrera</a></li>
+      </ul>
+    </div>
+    <p class="copyright container">&copy; <span id="year"></span> Stephen Astrera. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
